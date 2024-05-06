@@ -14,3 +14,7 @@ The `cdk.json` file tells the CDK toolkit how to execute your app.
  * `go test`         run unit tests
  
  *`go get` - get package imports
+
+ * `go get github.com/aws/aws-lambda-go/lambda` - get lambda SDK
+
+ 
