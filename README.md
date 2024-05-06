@@ -16,6 +16,8 @@ The `cdk.json` file tells the CDK toolkit how to execute your app.
  * `go get` - get package imports
 
  * `go get github.com/aws/aws-lambda-go/lambda` - get lambda SDK
+ * `go get github.com/aws/aws-sdk-go/service/dynamodb` - get dynamoDB SDK
+ * `go get github.com/aws/aws-sdk-go/aws/session`
 
  * `"github.com/aws/aws-cdk-go/awscdk/v2/awslambda"` - lambda new function 
 
@@ -24,5 +26,15 @@ The `cdk.json` file tells the CDK toolkit how to execute your app.
  * `GOOS=linux GOARCH=amd64 go build -o bootstrap` - to build executable
 
  * `zip function.zip bootstrap` - to zip the created binary this must match Code element in props of the NewFunction 
+
+ ## Write a Makefile to zip lambda code
+
+ ```
+ build:
+	@GOOS=linux GOARCH=amd64 go build -o bootstrap
+	@zip function.zip bootstrap
+
+```
+to run `make build`
 
  
