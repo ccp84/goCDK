@@ -25,4 +25,14 @@ The `cdk.json` file tells the CDK toolkit how to execute your app.
 
  * `zip function.zip bootstrap` - to zip the created binary this must match Code element in props of the NewFunction 
 
+ ## Write a Makefile to zip lambda code
+
+ ```
+ build:
+	@GOOS=linux GOARCH=amd64 go build -o bootstrap
+	@zip function.zip bootstrap
+
+```
+to run `make build`
+
  
