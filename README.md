@@ -16,6 +16,8 @@ The `cdk.json` file tells the CDK toolkit how to execute your app.
  * `go get` - get package imports
 
  * `go get github.com/aws/aws-lambda-go/lambda` - get lambda SDK
+ * `go get github.com/aws/aws-sdk-go/service/dynamodb` - get dynamoDB SDK
+ * `go get github.com/aws/aws-sdk-go/aws/session`
 
  * `"github.com/aws/aws-cdk-go/awscdk/v2/awslambda"` - lambda new function 
 
