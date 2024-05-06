@@ -13,8 +13,14 @@ The `cdk.json` file tells the CDK toolkit how to execute your app.
  * `cdk synth`       emits the synthesized CloudFormation template
  * `go test`         run unit tests
  
- *`go get` - get package imports
+ * `go get` - get package imports
 
  * `go get github.com/aws/aws-lambda-go/lambda` - get lambda SDK
+
+ * `"github.com/aws/aws-cdk-go/awscdk/v2/awslambda"` - lambda new function 
+
+ * - `Runtime: awslambda.Runtime_PROVIDED_AL2023(),` - runtime since changes as go not native 
+
+ * `go build -o main` - to build executable
 
  
