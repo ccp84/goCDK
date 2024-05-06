@@ -21,6 +21,8 @@ The `cdk.json` file tells the CDK toolkit how to execute your app.
 
  * - `Runtime: awslambda.Runtime_PROVIDED_AL2023(),` - runtime since changes as go not native 
 
- * `go build -o main` - to build executable
+ * `GOOS=linux GOARCH=amd64 go build -o bootstrap` - to build executable
+
+ * `zip function.zip bootstrap` - to zip the created binary this must match Code element in props of the NewFunction 
 
  
